@@ -1,8 +1,8 @@
 Grafische Oberflaechen
 ======================
 
-Das Script erzeugt eine kleine grafische Oberflaeche zum Bespiel
-../serial/mc.tcl
+Das Script erzeugt eine kleine grafische Oberflaeche zum Beispiel 
+(serielle Schnittstelle) im Verzeichnis ../serial/mc.tcl
 
 ---------
 Have fun!
