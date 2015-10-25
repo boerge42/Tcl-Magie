@@ -1,0 +1,17 @@
+Client/Server in Tcl
+====================
+
+Client-Script oeffnet einen Socket und sendet ueber diesen, dass von 
+stdin eingegebene Kommando zu einen Server-Script. Das Server-Script
+muss dazu gestartet sein.
+
+Innerhalb des Server-Scripts wird das empfangene Kommando mittels dem 
+Tcl-Befehl eval, ohne Pruefung/Sicherung, gnadenlos(!!!) evaluiert und 
+das Ergebnis dem Client zurueckgegeben.
+
+Ein "sicherer" Server ist unter ../safe_interpr zu finden.
+---------
+Have fun!
+
+Uwe Berger; 2015
+

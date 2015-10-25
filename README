@@ -1,0 +1,27 @@
+Tcl-"Magie"
+===========
+
+Hier sind einige Bespielloesungen fuer "alltaegliche" Programmier-
+aufgaben in Tcl zu finden. Mit Sicherheit stellen die Tcl-Scripte keine 
+vollstaendigen Anwenwendungen dar, sondern sollen lediglich mögliche 
+Loesungswege aufzeigen. In jedem Fall sind die Scripte lauffaehig, ueber
+deren Sinnhaftigkeit kann gestritten werden...:
+
+Themen:
+-------
+/client_server --> Client-/Server programmieren 
+/dyn_code      --> Magie mit, waehrend der Laufzeit, erzeugten Tcl-Code
+/filesystem    --> Arbeiten mit Verzeichnissen, Dateien
+/gui           --> grafische Oberflächen
+/listen        --> Verarbeitung von Listen
+/performance   --> Geschwindigkeitsbetrachtungen (und Tcls C-API)
+/safe_interpr  --> Sicherer Interpreter (Schutz gegen Codeinjection)
+/serial        --> Ansteuerung der seriellen Schnittstelle
+/sqlite        --> Arbeit mit sqlite-Datenbanken
+ 
+
+---------
+Have fun!
+
+Uwe Berger; 2015
+ 

@@ -1,0 +1,14 @@
+Listenverarbeitung
+==================
+
+Beispiele, welche die Maechtigkeit der Tcl-Befehle zur Listenverar-
+beitung aufzeigen sollen:
+
+list_sort.tcl --> Sortieren von Listenelementen
+wc.tcl        --> Analyse eines Textes (Buchstaben-, Zeilen-, Wortanzahl
+                  etc.) mit Hilfe von Tcl-Listen-Befehlen
+                  
+---------
+Have fun!
+
+Uwe Berger; 2015

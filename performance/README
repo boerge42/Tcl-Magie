@@ -1,0 +1,16 @@
+Performance-Tests
+=================
+
+Rekursive Berechnung der Fakultaet (factorial) mit Ausgabe der dazu be-
+noetigten Verarbeitszeit:
+
+/c     --> natives C-Programm
+/tcl   --> natives Tcl-Script
+/tcl_c --> Tcl-Script, in dem die factorial-Funktion aus einer, in C
+           geschrieben, shared Lib aufgerufen wird. Der Quelltext der
+           Lib ist in Verzeichnis mit enthalten
+           
+---------
+Have fun!
+
+Uwe Berger; 2015

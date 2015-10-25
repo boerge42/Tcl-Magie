@@ -1,0 +1,16 @@
+"Dynamischer Code"
+==================
+
+Tcl bietet die Moeglichkeit, Scriptbestandteile erst zur Laufzeit
+zu generieren und anzusprechen.
+
+dyn_var.tcl  --> "Erzeugen" von Variablennamen zur Laufzeit und der Zu-
+                 griff auf diese
+dyn_func.tcl --> Uebergabe eine eines Funktionsnamen als Parameter und
+                 und die entsprechende Ausfuehrung diese Funktion
+                 (aehnlich Funktionspointer in C...)
+                 
+---------
+Have fun!
+
+Uwe Berger; 2015

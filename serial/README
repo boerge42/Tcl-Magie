@@ -1,0 +1,12 @@
+Serielle Schnittstelle mit Tcl
+==============================
+
+Senden und Empfangen von Zeichenketten ueber die serielle Schnittstelle.
+Als "Gegenstelle" fungiert ein Mikrocontroller, der ein paar Kommnados
+versteht und auch etwas zuruecksendet. Der Quelltext der Firmware be-
+findet sich im Unterverzeichnis arduino/. 
+
+---------
+Have fun!
+
+Uwe Berger; 2015

@@ -1,0 +1,12 @@
+Sicherer Interpreter
+====================
+
+Sichere Version des Servers fuer das Beispiel in ../client_server
+
+Es werden nur die Kommandos evaluiert, die dem, vorher erzeugten, Inter-
+preter bekannt gemacht wurden.
+
+---------
+Have fun!
+
+Uwe Berger; 2015  

@@ -1,0 +1,12 @@
+Arbeiten mit Verzeichnissen/Dateien
+===================================
+
+Das Tcl-Script "wandert" durch den Verzeichnisbaum, ab dem Verzeichnis,
+welches als Script-Parameter angegeben wird. Es wird die Anzahl der 
+Unterverzeichnisse und Dateien, sowie der, von den gefundenen Dateien,
+verbrauchte Platz berechnet und ausgegben.
+
+---------
+Have fun!
+
+Uwe Berger; 2015 
