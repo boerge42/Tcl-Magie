@@ -3,8 +3,8 @@ OUT     = $(TARGET).so
 CC      = gcc
 CFLAGS  = -shared
 CFLAGS += -fPIC
-;CFLAGS += -DUSE_TCL_STUBS -ltclstub8.6
-CFLAGS += -I/usr/include/tcl8.6
+; CFLAGS += -DUSE_TCL_STUBS -ltclstub
+CFLAGS += -I/usr/include/tcl
 
 
 all: $(TARGET)

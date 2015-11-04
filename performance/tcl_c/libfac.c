@@ -39,12 +39,11 @@
  */
 
 #include <tcl.h>
-//#include <string.h>
 #include "libfac.h"
 
 
 /* *************************************************** */
-long long int factorial (int n) 
+unsigned long long int factorial (int n) 
 {
 	if (n <= 1) {
 		return n;
@@ -61,7 +60,7 @@ long long int factorial (int n)
 int Fac_Init (Tcl_Interp *interp) {
 
 #ifdef USE_TCL_STUBS
-	if (Tcl_InitStubs(interp, "8.1", 0) == 0L) {
+	if (Tcl_InitStubs(interp, TCL_VERSION, 0) == 0L) {
 		return TCL_ERROR;
 	}
 #endif
@@ -86,7 +85,7 @@ int Fac_cmd (ClientData cdata,
 	// Parameter ueberpruefen...
 	// ...genau ein Parameter (factorial <number>)
 	if (objc != 2) {
-		Tcl_WrongNumArgs (interp, 1, objv, "too many arguments");
+		Tcl_WrongNumArgs (interp, 1, objv, "<number>");
 		return TCL_ERROR;
 	}
 	// ...Parameter muss eine Zahl sein
@@ -95,14 +94,18 @@ int Fac_cmd (ClientData cdata,
 		Tcl_SetObjResult (interp, retval);
 		return TCL_ERROR;	
 	}
-	// ...Parameter groesser/gleich 0 sein
+	// ...Parameter muss groesser/gleich 0 sein
 	if (fac < 0) {
-		Tcl_Obj *retval = Tcl_NewStringObj("factorial: argument must >= 0", -1);
+		Tcl_Obj *retval = Tcl_NewStringObj("factorial: argument must be >= 0", -1);
 		Tcl_SetObjResult (interp, retval);
 		return TCL_ERROR;			
 	}
-	// ...theoretisch muesste man noch maximale Groesse des Parameter
-	// ueberpruefen ;-)
+	// ...Parameter muss kleiner/gleich 20 sein 
+	if (fac > 20) {
+		Tcl_Obj *retval = Tcl_NewStringObj("factorial: argument must be <= 20", -1);
+		Tcl_SetObjResult (interp, retval);
+		return TCL_ERROR;			
+	}
 	
 	// Berechnungs ausfuehren und Ergebnis zurueckgeben
 	Tcl_Obj* retval = Tcl_NewWideIntObj((Tcl_WideInt)factorial(fac));
