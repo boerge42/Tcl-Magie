@@ -85,7 +85,7 @@ int Fac_cmd (ClientData cdata,
 	// Parameter ueberpruefen...
 	// ...genau ein Parameter (factorial <number>)
 	if (objc != 2) {
-		Tcl_WrongNumArgs (interp, 1, objv, "<number>");
+		Tcl_WrongNumArgs (interp, 1, objv, "<number>\"");
 		return TCL_ERROR;
 	}
 	// ...Parameter muss eine Zahl sein
